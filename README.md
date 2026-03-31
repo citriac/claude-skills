@@ -105,6 +105,22 @@ Claude will automatically apply the skill's workflows, templates, and domain kno
 
 ---
 
+### 🧠 [agent-memory](./agent-memory/)
+File-based agent memory management system.
+- Read/write MEMORY.md and daily session logs
+- Memory distillation (monthly: daily logs → MEMORY.md)
+- Cross-platform memory migration (via claw-migrate)
+- Memory health check and size monitoring
+
+**Best for:** AI agents that need persistent context across sessions, especially on constrained hardware. No database, no embeddings, no external services.
+
+```bash
+# Check your memory system
+python3 agent-memory/scripts/read_memory.py /path/to/workspace
+```
+
+---
+
 ## Contributing
 
 Have a skill to share? PRs welcome. Guidelines:
